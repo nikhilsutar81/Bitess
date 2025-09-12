@@ -46,8 +46,8 @@ const PlaceOrder = () => {
     
     let response= await axios.post(url+"/api/order/place",orderData,{headers:{token}});
     if(response.data.success){
-      const {session_url}=response.data;
-      window.location.replace(session_url);
+      const { orderId } = response.data;
+      navigate(`/verify?success=true&orderId=${orderId}`);
     }else{
       toast.error("Errors!")
     }
