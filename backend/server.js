@@ -30,7 +30,7 @@ connectDB();
 
 // api endpoints
 app.use("/api/food", foodRouter);
-app.use("/images", express.static("uploads"));
+// app.use("/images", express.static("uploads")); // Disabled for Vercel
 app.use("/api/user", userRouter);
 app.use("/api/cart", cartRouter);
 app.use("/api/order", orderRouter);
