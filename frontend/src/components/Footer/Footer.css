@@ -23,6 +23,14 @@
   align-items: start;
   gap: 20px;
 }
+
+.footer-content-left img {
+  max-width: 140px;
+  height: auto;
+  width: 100%;
+  margin-bottom: 10px;
+}
+}
 .footer-content-left li,
 .footer-content-center li,
 .footer-content-right li {
@@ -56,5 +64,11 @@
   }
   .footer-copyright{
     text-align: center;
+  }
+  .footer-content-left img {
+    max-width: 100px;
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
   }
 }
