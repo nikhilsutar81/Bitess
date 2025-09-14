@@ -71,4 +71,11 @@
     height: auto;
     margin-bottom: 10px;
   }
+  .footer-social-icons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    gap: 10px;
+  }
 }
